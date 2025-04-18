@@ -5,30 +5,29 @@
 
 # Chess Game with Pygame and Stockfish
 
-![Chess Game Logo](screenshots/Main-menu.png)
-
+<img src="screenshots/Main-menu.png" width="200">
 A feature-rich chess implementation built with Python's Pygame library, powered by the Stockfish chess engine for AI gameplay. This project offers both single-player against computer and local two-player modes with intuitive graphical interface.
 
 ## Key Features
 
 ### Game Modes
 - **Single Player**: Challenge the Stockfish AI at various difficulty levels  
-  ![Chess Game Logo](screenshots/Difficulty-menu.png)
-  ![Chess Game Logo](screenshots/Singleplayer.png)
+  <img src="screenshots/Difficulty-menu.png" width="200">
+  <img src="screenshots/Singleplayer.png" width="200">
 - **Two Player**: Play locally against a friend with undo/redo functionality  
-  ![Chess Game Logo](screenshots/Twoplayer.png)
+  <img src="screenshots/Twoplayer.png" width="200">
 
 ### Gameplay Features
 - Complete chess rules implementation including:
   - En passant
   - Castling
   - Pawn promotion with graphical selection menu  
-    *(Screenshot 4: Promotion popup showing queen/rook/bishop/knight options)*
+    <img src="screenshots/Pawn-promotion.png" width="200">
   - Check/checkmate detection
 - Visual indicators:
   - Yellow highlight for selected pieces
   - Red highlight for king in checkmate  
-    ![Chess Game Logo](screenshots/Checkmate.png)
+    <img src="screenshots/Checkmate.png" width="200">
 - Turn indicator and game status display
 
 ## Installation
@@ -47,7 +46,7 @@ A feature-rich chess implementation built with Python's Pygame library, powered 
 
 3. **Run the game**:
    ```bash
-   python my_chess_nubye.py
+   python PyChess.py
    ```
 
 ## How to Play
@@ -56,10 +55,8 @@ A feature-rich chess implementation built with Python's Pygame library, powered 
 - **Special Moves**:
   - Castling: Move king two squares toward rook
   - Promotion: Automatic menu appears when pawn reaches back rank
-   ![Chess Game Logo](screenshots/Pawn-promotion.png)
 - **Game Controls**:
   - Undo/Redo available in two-player mode (bottom-right buttons)  
-    ![Chess Game Logo](screenshots/Twoplayer.png)
   - After game ends, click to return to main menu
 
 ## Technical Details
@@ -67,3 +64,7 @@ A feature-rich chess implementation built with Python's Pygame library, powered 
 - **Engine**: Uses Stockfish via python-chess UCI interface
 - **AI Configuration**: Skill levels map to Stockfish's difficulty settings (0-20 scale)
 - **Graphics**: All standard chess pieces with clean green/white board
+
+## License
+- **This project**: [MIT License](LICENSE) - Free for any use  
+- **Stockfish engine**: [GPL-3.0 License](https://stockfishchess.org/get-involved/) (required for AI)  
